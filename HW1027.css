@@ -1,0 +1,297 @@
+img {
+  display: block; 
+}
+.clearfix{
+  clear:both;
+}
+.container{
+  min-width: 230px;
+  max-width:450px;
+  margin: 0 auto;
+}
+.cover a {
+  color: white;
+  font-size: 1.2rem;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-family:"Montserrat";
+  line-height: 3rem;
+  font-size: .9rem;
+}
+a:hover{
+  color: #94FCF6;
+}
+ul{
+  padding-left: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+#header{
+  background-color: #94FCF6; 
+  padding-bottom: 2%;
+}
+nav{
+  display: none;
+}
+nav ul{
+  margin-top: -10%;
+}
+nav.open{
+  display: block;
+  top:0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,.8);
+  padding-top: 50%;
+  text-align:center;
+  position: fixed;
+  z-index: 1;
+}
+#logo img {
+  margin: 0 auto; 
+}
+#menu{
+  position: fixed;
+  font-size: 1.5rem;
+  top: 0.3rem;
+  right: 0.5rem;
+  z-index: 2;
+}
+h1{
+  color:white;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing:.2rem;
+}
+.intro{
+  margin-top: 10%;
+  text-align: center; 
+}
+h2{
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif; 
+}
+.intro p{
+  font-size: .5rem;
+  font-family: "Felipa", sans-serif; 
+}
+hr{
+  width: 10%;
+  height: .05rem;
+  background-color: black;
+}
+.type a{
+  text-align: center;
+  font-size: 0.6rem;
+  margin: .3rem;
+}
+.photos img{   
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.photos{
+  position: relative;
+}
+.cover h3{
+  margin-top:20%;
+  font-size: 1.5rem;
+  color:white;
+  font-family: "Montserrat", sans-serif; 
+}
+.cover p{
+  font-size: 1rem;
+  color: white;
+  font-family: "Felipa", sans-serif;
+}
+.cover{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+.cover:hover{
+  opacity:1;
+  background-color: rgba(0,0,0,.8); 
+}
+.loadmore{
+  text-align: center;
+  font-family: "Montserrat", sans-serif; 
+  font-size: .7rem;
+  margin: 1rem;
+}
+.loadmore img{
+  margin: 0 auto;
+}
+#footer{
+  background-color: #FFD363;
+  text-align: center;
+}
+#footer img{
+  padding-top: 0.5rem;
+}
+#social-media li{
+  display: inline-block;
+}
+#social-media a{
+  margin:0 1rem;
+}
+#footer p{
+  margin-bottom: 0;
+  font-family: "Felipa", sans-serif
+}
+@media(min-width :768px){
+  .container{
+    max-width: 900px;
+  }
+  #logo{
+    height: 40px;
+  }
+  #logo img{
+    height: 100%;
+    width: auto;
+  }
+  #menu{
+    font-size: 3rem;
+    margin-top: -0.2rem;
+  }
+  h1{
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  nav a{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  nav ul{
+    margin-top: -15%;
+  }
+  a{
+    font-size: 1rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .intro p{
+    font-size: 1.2rem;
+  }
+  hr{
+    width: 8%;
+  }
+  .type a{
+    font-size: 1rem;
+    margin: 0 2%;
+  }
+  .photos{
+    position: relative;
+    display: inline-block;
+    margin: 1%;
+  }
+
+  .photoalbum{
+    text-align: center;
+    column-count: 2;
+  }
+
+  .photos img{   
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .cover{
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    position:absolute;
+    top: 0;
+    left: 0;  
+  }
+  .cover h3{
+    margin-top:13%;
+    font-size: 2rem;
+    color:white;
+    font-family: "Montserrat", sans-serif; 
+  }
+  .cover p{
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Felipa", sans-serif;
+  }
+  .cover a{
+    font-size: 1.5rem;
+  }
+  .loadmore img{
+    padding:  2% 0 0 0;
+  }
+  .loadmore{
+    font-size: 1.5rem;
+  }
+}
+@media(min-width: 1280px){
+  .container{
+    position: relative;
+    max-width: 1400px;
+  }
+  #header #logo {
+    float: left;
+    height: 50px;
+  }
+  #logo img{
+    height: 100%;
+    width: auto;
+  }
+  #menu{
+    display: none;
+  }
+  
+  nav {
+       float: right;
+    display: inline-block;
+  }
+  nav li{
+    display: inline-block;
+    padding-right: 2rem;
+  }
+  nav ul{
+    margin-top:0px;
+ 
+  }
+  nav a{
+    font-size: 1.5rem;
+  }
+  nav a:hover{
+    color:#646cfc;
+  }
+  h1{
+    font-size: 4.5rem;
+    line-height: 6rem;
+  }
+  h2{
+    font-size: 2.4rem;
+  }
+  .intro p{
+    font-size: 1.5rem;
+  }
+  hr{
+    width: 8%;
+  }
+  .type a{
+    font-size: 1.3rem;
+    margin: 0 1%;
+  }
+  .photos{
+    margin: 2%;
+  }
+  .photoalbum{
+    column-count: 3;
+    height: 830px
+  }
+}
