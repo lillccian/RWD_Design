@@ -146,6 +146,7 @@ hr{
 }
 #footer p{
   margin-bottom: 0;
+  padding-bottom:2%;
   font-family: "Felipa", sans-serif
 }
 @media(min-width :768px){
