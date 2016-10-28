@@ -295,6 +295,6 @@ hr{
   }
   .photoalbum{
     column-count: 3;
-    height: 900px;
+    height: 780px;
   }
 }
