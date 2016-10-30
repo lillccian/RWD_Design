@@ -1,0 +1,252 @@
+// type
+$main-font:"Montserrat", sans-serif
+$art-font:"Courgette", cursive
+$main-color:#94FCF6
+$second-color:#FFD363
+// common
+img 
+  display: block
+.clearfix
+  clear: both
+.container
+  max-width: 500px
+  width: 80%
+  margin: 0 auto
+a
+  text-decoration: none
+  color: black
+  font-family: $main-font
+  &:hover
+    color: $main-color
+ul
+  padding-left: 0px
+  list-style-type: none
+  text-align: center
+#logo
+  text-align: center
+  p
+    padding: 2vw
+    font-size: 5.5vw
+    margin: 0  
+    font-family: $main-font
+// structure
+#header
+  background-color: $main-color
+  background-image: url(http://demo.syakirurohman.net/template/elrumi/assets/img/bg.png)
+  padding-bottom: 2%
+  nav
+    display: none
+    a
+      line-height: 12vw
+      font-size: 4vw
+  .open
+    display: block
+    top: 0
+    right: 0
+    width: 100vw
+    height: 100vh
+    background-color: rgba(255,255,255,.85)
+    padding-top: 20vh
+    position: fixed
+    z-index: 1
+  h1
+    color: white
+    font-family: $main-font
+    text-align: center
+    font-size: 6.5vw
+    line-height: 10vw
+    letter-spacing: 1vw
+    font-weight: normal
+  #menu
+    position: fixed
+    font-size: 7.5vw
+    top: 1vw
+    right: 1vw
+    z-index: 1
+.intro
+  margin-top: 7vw
+  text-align: center
+  h2
+    font-size: 5vw
+    font-family: $main-font
+  p
+    font-size: 3vw
+    font-family: $art-font
+    font-weight: 100
+  hr
+    width: 10vw
+    height: .3vw
+    background-color: black
+    border-color: black
+.photo-library
+  .type
+    a
+      text-align: center
+      font-size: 3vw
+      margin: 2vw
+  .photoalbum
+    text-align: center
+    .photos
+      margin: 0 auto
+      position: relative
+      img
+        width: 100%
+    .cover
+      width: 90%
+      height: 84%
+      opacity: 0
+      position: absolute
+      top: 8%
+      left: 5%
+
+      .text
+        width: 100%
+        position: absolute
+        top: 45%
+        transform: translateY(-50%)
+      h3
+        font-size: 130%
+        color: white
+        font-family: $main-font
+      p
+        font-size: 100%
+        color: white
+        font-family: $art-font
+      a
+        padding-left: 5%
+        color: white
+        font-size: 50%
+        font-family: $main-font
+        &:hover
+          color: $main-color
+      &:hover
+        opacity: 1
+        background-color: rgba(0,0,0,.8)
+  .loadmore
+    text-align: center
+    font-family: $main-font
+    font-size: 4vw
+    margin: 5vw
+#footer
+  background-color: $second-color
+  text-align: center
+  #social-media
+    .icon
+      li
+        display: inline-block
+        a
+          margin: 0 2vw
+          font-size: 8vw
+    .name
+      display: none
+  h5
+    margin-bottom: 0
+    padding-bottom: 2%
+    font-family: $art-font
+@media(min-width: 768px)
+  .container
+    max-width: 700px
+  #logo
+    p 
+      font-size: 40px
+      line-height: 10vw
+  #header
+    nav
+      display: block
+      margin: 0 auto
+      ul
+        margin-top: 0
+        li
+          display: inline-block
+          &:after
+            margin: 1vw
+            content: "•"
+          &:last-child:after
+            content: ""
+          a
+            font-size: 2.5vw
+            line-height: 5vw
+            &:hover
+              color: white
+    #menu
+      display: none
+    h1
+      font-size: 5vw
+      line-height: 7vw
+
+  .intro
+    h2
+      font-size: 5vw
+    p
+      font-size: 3vw
+  .photo-library
+    .type
+      a
+        font-size: 1.7vw
+        margin: .8vw
+  .photos
+    display: inline-block
+    width: 49%
+  .loadmore
+    p
+      padding: 0
+      font-size: 3vw
+  #footer
+    #social-media
+      .icon
+        display: none
+      .name
+        display: block
+        margin: 0 auto
+        ul
+          display: block
+          li
+            display: inline-block
+            a
+              font-size: 2.5vw
+              margin: 1.3vw
+              &:hover
+                color: white
+@media(min-width: 1024px)
+  .container
+    max-width: 1024px
+  #header
+    #logo
+      float: left
+      p
+        padding: 0 
+    nav
+      float: right
+      ul
+        margin-top: 33px
+        li
+          a
+            font-size: 18px
+    h1
+      font-size: 5vw
+      line-height: 9vw
+  .intro
+    h2
+      font-size: 4vw
+    p
+      font-size: 2vw
+  .photos
+    width: 33%
+  .loadmore
+    #load
+      font-size: 25px
+    p
+      font-size: 20px
+  #logo
+    p
+      font-size: 40px
+      padding: 0
+  #social-media
+    .name
+      ul
+        margin-top: 0
+        li
+          a
+            font-size: 100vw
+
+  

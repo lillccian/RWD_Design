@@ -1,0 +1,247 @@
+@charset "UTF-8";
+img {
+  display: block; }
+
+.clearfix {
+  clear: both; }
+
+.container {
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif; }
+  a:hover {
+    color: #94FCF6; }
+
+ul {
+  padding-left: 0px;
+  list-style-type: none;
+  text-align: center; }
+
+#logo {
+  text-align: center; }
+  #logo p {
+    padding: 2vw;
+    font-size: 5.5vw;
+    margin: 0;
+    font-family: "Montserrat", sans-serif; }
+
+#header {
+  background-color: #94FCF6;
+  background-image: url(http://demo.syakirurohman.net/template/elrumi/assets/img/bg.png);
+  padding-bottom: 2%; }
+  #header nav {
+    display: none; }
+    #header nav a {
+      line-height: 12vw;
+      font-size: 4vw; }
+  #header .open {
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding-top: 20vh;
+    position: fixed;
+    z-index: 1; }
+  #header h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 6.5vw;
+    line-height: 10vw;
+    letter-spacing: 1vw;
+    font-weight: normal; }
+  #header #menu {
+    position: fixed;
+    font-size: 7.5vw;
+    top: 1vw;
+    right: 1vw;
+    z-index: 1; }
+
+.intro {
+  margin-top: 7vw;
+  text-align: center; }
+  .intro h2 {
+    font-size: 5vw;
+    font-family: "Montserrat", sans-serif; }
+  .intro p {
+    font-size: 3vw;
+    font-family: "Courgette", cursive;
+    font-weight: 100; }
+  .intro hr {
+    width: 10vw;
+    height: 0.3vw;
+    background-color: black;
+    border-color: black; }
+
+.photo-library .type a {
+  text-align: center;
+  font-size: 3vw;
+  margin: 2vw; }
+.photo-library .photoalbum {
+  text-align: center; }
+  .photo-library .photoalbum .photos {
+    margin: 0 auto;
+    position: relative; }
+    .photo-library .photoalbum .photos img {
+      width: 100%; }
+  .photo-library .photoalbum .cover {
+    width: 90%;
+    height: 84%;
+    opacity: 0;
+    position: absolute;
+    top: 8%;
+    left: 5%; }
+    .photo-library .photoalbum .cover .text {
+      width: 100%;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%); }
+    .photo-library .photoalbum .cover h3 {
+      font-size: 130%;
+      color: white;
+      font-family: "Montserrat", sans-serif; }
+    .photo-library .photoalbum .cover p {
+      font-size: 100%;
+      color: white;
+      font-family: "Courgette", cursive; }
+    .photo-library .photoalbum .cover a {
+      padding-left: 5%;
+      color: white;
+      font-size: 50%;
+      font-family: "Montserrat", sans-serif; }
+      .photo-library .photoalbum .cover a:hover {
+        color: #94FCF6; }
+    .photo-library .photoalbum .cover:hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.8); }
+.photo-library .loadmore {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vw;
+  margin: 5vw; }
+
+#footer {
+  background-color: #FFD363;
+  text-align: center; }
+  #footer #social-media .icon li {
+    display: inline-block; }
+    #footer #social-media .icon li a {
+      margin: 0 2vw;
+      font-size: 8vw; }
+  #footer #social-media .name {
+    display: none; }
+  #footer h5 {
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    font-family: "Courgette", cursive; }
+
+@media(min-width: 768px) {
+  .container {
+    max-width: 700px; }
+
+  #logo p {
+    font-size: 40px;
+    line-height: 10vw; }
+
+  #header nav {
+    display: block;
+    margin: 0 auto; }
+    #header nav ul {
+      margin-top: 0; }
+      #header nav ul li {
+        display: inline-block; }
+        #header nav ul li:after {
+          margin: 1vw;
+          content: "•"; }
+        #header nav ul li:last-child:after {
+          content: ""; }
+        #header nav ul li a {
+          font-size: 2.5vw;
+          line-height: 5vw; }
+          #header nav ul li a:hover {
+            color: white; }
+  #header #menu {
+    display: none; }
+  #header h1 {
+    font-size: 5vw;
+    line-height: 7vw; }
+
+  .intro h2 {
+    font-size: 5vw; }
+  .intro p {
+    font-size: 3vw; }
+
+  .photo-library .type a {
+    font-size: 1.7vw;
+    margin: 0.8vw; }
+
+  .photos {
+    display: inline-block;
+    width: 49%; }
+
+  .loadmore p {
+    padding: 0;
+    font-size: 3vw; }
+
+  #footer #social-media .icon {
+    display: none; }
+  #footer #social-media .name {
+    display: block;
+    margin: 0 auto; }
+    #footer #social-media .name ul {
+      display: block; }
+      #footer #social-media .name ul li {
+        display: inline-block; }
+        #footer #social-media .name ul li a {
+          font-size: 2.5vw;
+          margin: 1.3vw; }
+          #footer #social-media .name ul li a:hover {
+            color: white; } }
+@media(min-width: 1024px) {
+  .container {
+    max-width: 1024px; }
+
+  #header #logo {
+    float: left; }
+    #header #logo p {
+      padding: 0; }
+  #header nav {
+    float: right; }
+    #header nav ul {
+      margin-top: 33px; }
+      #header nav ul li a {
+        font-size: 18px; }
+  #header h1 {
+    font-size: 5vw;
+    line-height: 9vw; }
+
+  .intro h2 {
+    font-size: 4vw; }
+  .intro p {
+    font-size: 2vw; }
+
+  .photos {
+    width: 33%; }
+
+  .loadmore #load {
+    font-size: 25px; }
+  .loadmore p {
+    font-size: 20px; }
+
+  #logo p {
+    font-size: 40px;
+    padding: 0; }
+
+  #social-media .name ul {
+    margin-top: 0; }
+    #social-media .name ul li a {
+      font-size: 100vw; } }
+
+/*# sourceMappingURL=sass1027.css.map */
